@@ -1,6 +1,5 @@
 package com.ohgiraffers.section02.crud;
 
-
 import jakarta.persistence.*;
 
 @Entity(name = "section02Menu")
@@ -8,9 +7,12 @@ import jakarta.persistence.*;
 public class Menu {
 
     //pk -> not null, unique -> auto increment
-    @Id//not null, unique
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // 오토(알아서 해줌), 아이덴티티(마이 바티스), 시퀸스(오라클)
-
+    @Id //not null, unique
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    /* strategy 속성
+     *   - AUTO : 우리가 사용하는 DB 에 따른다.
+     *   - IDENTITY / SEQUENCE : mysql auto_increment 사용 oracle sequence
+     *  */
     @Column(name = "menu_code")
     private int menuCode;
 
@@ -26,15 +28,28 @@ public class Menu {
     @Column(name = "orderable_status")
     private String orderableStatus;
 
-    //같은 패키지 내에 있는 녀석들만 사용 가능 할 수 있다.
-    protected Menu(){}
+    // 같은 패키지 내에 있는 녀석들만 사용 가능 할 수 있다.
+    protected Menu() {}
 
-    public Menu(int menuCode, String menuName, int menuPrice, int categoryCode, String orderableStatus) {
-        this.menuCode = menuCode;
+    public Menu(String menuName, int menuPrice, int categoryCode, String orderableStatus) {
+
         this.menuName = menuName;
         this.menuPrice = menuPrice;
         this.categoryCode = categoryCode;
         this.orderableStatus = orderableStatus;
     }
 
+    public int getMenuCode() {
+
+        return this.menuCode;
+    }
+
+    public void setMenuName(String menuName) {
+        this.menuName = menuName;
+
+    }
+
+    public String getMenuName() {
+        return menuName;
+    }
 }
