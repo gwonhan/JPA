@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="004a7e64-30ea-49d0-a47f-74f3224f6d32" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/58ef6a13-884f-4c93-b1df-51b856b10590.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/58ef6a13-884f-4c93-b1df-51b856b10590.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2hRCDLtfRyo5u3kkZDIRo2J2Hic" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build chap01-presistnace-context-lecture-source.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.EntityManagerCRUDTests.testFindMethodByMenuCode.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.EntityManagerCRUDTests.testRegist.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.EntityManagerCURDTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.EntityManagerCURDTests.testFindMethodByCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityLifeCycleTests.testDetachEntity.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityLifeCycleTests.testTransient.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityManagerCRUDTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityManagerCRUDTests.testFindMethodByMenuCode.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityManagerCRUDTests.testRegist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EntityManagerCRUDTests.testRemoveMenu.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Lecture/13_jpa/01_lecture-source/chap01-presistnace-context-lecture-source&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ohgiraffers.section03.entity" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.EntityLifeCycleTests.testDetachEntity">
+    <configuration name="EntityLifeCycleTests.testDetachEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap01-presistnace-context-lecture-source.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.section03.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.section03.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.section03.entity.EntityLifeCycleTests" />
+      <option name="METHOD_NAME" value="testDetachEntity(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntityLifeCycleTests.testTransient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap01-presistnace-context-lecture-source.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.section03.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.section03.entity" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.section03.entity.EntityLifeCycleTests" />
+      <option name="METHOD_NAME" value="testTransient(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntityManagerCRUDTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap01-presistnace-context-lecture-source.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.section02.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.section02.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.section02.crud.EntityManagerCRUDTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntityManagerCRUDTests.testFindMethodByMenuCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap01-presistnace-context-lecture-source.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.section02.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.section02.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.section02.crud.EntityManagerCRUDTests" />
+      <option name="METHOD_NAME" value="testFindMethodByMenuCode(int,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EntityManagerCRUDTests.testRemoveMenu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="chap01-presistnace-context-lecture-source.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohgiraffers.section02.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohgiraffers.section02.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.ohgiraffers.section02.crud.EntityManagerCRUDTests" />
+      <option name="METHOD_NAME" value="testRemoveMenu(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EntityLifeCycleTests.testDetachEntity" />
+        <item itemvalue="JUnit.EntityLifeCycleTests.testTransient" />
+        <item itemvalue="JUnit.EntityManagerCRUDTests.testRemoveMenu" />
+        <item itemvalue="JUnit.EntityManagerCRUDTests" />
+        <item itemvalue="JUnit.EntityManagerCRUDTests.testFindMethodByMenuCode" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-temurin-17.0.10-4caba194b151-b3785831" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="004a7e64-30ea-49d0-a47f-74f3224f6d32" name="Changes" comment="" />
+      <created>1717547382321</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717547382321</updated>
+      <workItem from="1717547383344" duration="18025000" />
+      <workItem from="1717719336805" duration="818000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
