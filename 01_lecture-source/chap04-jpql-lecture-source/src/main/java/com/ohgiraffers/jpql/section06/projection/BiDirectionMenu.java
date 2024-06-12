@@ -1,11 +1,12 @@
-package com.ohgiraffers.jpql.section05.join;
+package com.ohgiraffers.jpql.section06.projection;
+
 
 import jakarta.persistence.*;
 
-
-@Entity(name = "section05Menu")
+@Entity(name = "BiDirectionMenu")
 @Table(name = "tbl_menu")
-public class Menu {
+public class BiDirectionMenu {
+
     @Id
     @Column(name = "menu_code")
     private int menuCode;
@@ -18,19 +19,19 @@ public class Menu {
 
     @ManyToOne
     @JoinColumn(name = "category_code")
-    private Category category;
+    private BiDirectionCategory category;
 
     @Column(name = "orderable_status")
-    private String orderabaleStatus;
+    private String orderableStatus;
 
-    public Menu() {}
+    protected BiDirectionMenu() {}
 
-    public Menu(int menuCode, String menuName, int menuPrice, Category category, String orderabaleStatus) {
+    public BiDirectionMenu(int menuCode, String menuName, int menuPrice, BiDirectionCategory category, String orderableStatus) {
         this.menuCode = menuCode;
         this.menuName = menuName;
         this.menuPrice = menuPrice;
         this.category = category;
-        this.orderabaleStatus = orderabaleStatus;
+        this.orderableStatus = orderableStatus;
     }
 
     public int getMenuCode() {
@@ -45,12 +46,12 @@ public class Menu {
         return menuPrice;
     }
 
-    public Category getCategory() {
+    public BiDirectionCategory getCategory() {
         return category;
     }
 
-    public String getOrderabaleStatus() {
-        return orderabaleStatus;
+    public String getOrderableStatus() {
+        return orderableStatus;
     }
 
     @Override
@@ -60,11 +61,7 @@ public class Menu {
                 ", menuName='" + menuName + '\'' +
                 ", menuPrice=" + menuPrice +
                 ", category=" + category +
-                ", orderabaleStatus='" + orderabaleStatus + '\'' +
+                ", orderableStatus='" + orderableStatus + '\'' +
                 '}';
-    }
-
-    public void setMenuName(String menuName) {
-        this.menuName =menuName;
     }
 }

@@ -1,10 +1,13 @@
-package com.ohgiraffers.jpql.section05.join;
+package com.ohgiraffers.jpql.section07.namedquery;
 
 import jakarta.persistence.*;
 
-
-@Entity(name = "section05Menu")
+@Entity(name = "section07Menu")
 @Table(name = "tbl_menu")
+@NamedQueries({
+        @NamedQuery(name = "section07Menu.selectMenuList",
+        query = "SELECT m FROM section07Menu m")
+})
 public class Menu {
     @Id
     @Column(name = "menu_code")
@@ -16,20 +19,19 @@ public class Menu {
     @Column(name = "menu_price")
     private int menuPrice;
 
-    @ManyToOne
-    @JoinColumn(name = "category_code")
-    private Category category;
+    @Column(name = "category_code")
+    private int categoryCode;
 
     @Column(name = "orderable_status")
     private String orderabaleStatus;
 
     public Menu() {}
 
-    public Menu(int menuCode, String menuName, int menuPrice, Category category, String orderabaleStatus) {
+    public Menu(int menuCode, String menuName, int menuPrice, int categoryCode, String orderabaleStatus) {
         this.menuCode = menuCode;
         this.menuName = menuName;
         this.menuPrice = menuPrice;
-        this.category = category;
+        this.categoryCode = categoryCode;
         this.orderabaleStatus = orderabaleStatus;
     }
 
@@ -45,8 +47,8 @@ public class Menu {
         return menuPrice;
     }
 
-    public Category getCategory() {
-        return category;
+    public int getCategoryCode() {
+        return categoryCode;
     }
 
     public String getOrderabaleStatus() {
@@ -59,12 +61,12 @@ public class Menu {
                 "menuCode=" + menuCode +
                 ", menuName='" + menuName + '\'' +
                 ", menuPrice=" + menuPrice +
-                ", category=" + category +
+                ", categoryCode=" + categoryCode +
                 ", orderabaleStatus='" + orderabaleStatus + '\'' +
                 '}';
     }
 
     public void setMenuName(String menuName) {
-        this.menuName =menuName;
+        this.menuName = menuName;
     }
 }
