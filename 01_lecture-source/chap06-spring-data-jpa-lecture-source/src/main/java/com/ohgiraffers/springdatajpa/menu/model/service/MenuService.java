@@ -110,4 +110,29 @@ public class MenuService {
 
 
     }
+    @Transactional
+    public void modifyMenu(MenuDTO modifyMenu) {
+
+       Menu foundMenu =  repository.findById(modifyMenu.getMenuCode()).orElseThrow(IllegalArgumentException::new);
+
+        /* 1. setter 사용해서 수정해보기, setter 사용은 지양한다.*/
+
+//        foundMenu.setMenuName(modifyMenu.getMenuName());
+
+        /*2. @Builder */
+//        foundMenu = foundMenu.toBuilder().menuName(modifyMenu.getMenuName()).build();
+//
+//        repository.save(foundMenu);
+
+       /*3. Entity 클래스 내부에서 builder 패턴을 사용해서 구현*/
+
+        foundMenu =foundMenu.menuName(modifyMenu.getMenuName()).builder();
+        repository.save(foundMenu);
+
+    }
+
+    public void deleteMenu(int menuCode) {
+        repository.deleteById(menuCode);
+
+    }
 }

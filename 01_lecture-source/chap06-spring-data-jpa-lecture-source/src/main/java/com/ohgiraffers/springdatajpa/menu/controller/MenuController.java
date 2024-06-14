@@ -88,6 +88,8 @@ public class MenuController {
     @GetMapping("/regist")
     public void registPage(){}
 
+
+
     @GetMapping(value = "/category", produces = "application/json; charset=UTF-8")
     @ResponseBody
 
@@ -104,5 +106,24 @@ public class MenuController {
         return "redirect:/menu/list";
     }
 
+    @GetMapping("/modify")
+    public void modifyPage(){}
 
+    @PostMapping("/modify")
+    public String modifyMenu(MenuDTO modifyMenu){
+
+        service.modifyMenu(modifyMenu);
+
+        return "redirect:/menu/" +modifyMenu.getMenuCode();
+    }
+
+    @GetMapping("/delete")
+    public void deletePage(){}
+
+    @PostMapping("/delete")
+    public String deleteMenu(@RequestParam int menuCode){
+        service.deleteMenu(menuCode);
+
+        return "redirect:/menu/list" ;
+    }
 }
